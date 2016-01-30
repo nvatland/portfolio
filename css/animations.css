@@ -1,0 +1,89 @@
+/***************************
+KEYFRAMES
+***************************/
+@-webkit-keyframes scale {
+	0% {
+		-webkit-transform: scale(0);
+		        transform: scale(0);
+	}
+
+
+	90% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+
+	}
+}
+@keyframes scale {
+	0% {
+		-webkit-transform: scale(0);
+		        transform: scale(0);
+	}
+
+
+	90% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+
+	}
+}
+
+@-webkit-keyframes appear {
+	from {
+		visibility: hidden;
+		opacity: 0;
+		-webkit-transform: translateY(-100px);
+		        transform: translateY(-100px);
+	}
+
+	to {
+		visibility: visible;
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+		        transform: translateY(0px);
+	}
+}
+
+@keyframes appear {
+	from {
+		visibility: hidden;
+		opacity: 0;
+		-webkit-transform: translateY(-100px);
+		        transform: translateY(-100px);
+	}
+
+	to {
+		visibility: visible;
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+		        transform: translateY(0px);
+	}
+}
+
+/***************************
+APPLIED ANIMATIONS
+***************************/
+.st0, .st1, .st2, .st3 {
+	-webkit-animation: scale 2.5s  0.6s forwards cubic-bezier(0.17, 0.89, 0.32, 1.28);
+	-o-animation: scale 2.5s  0.6s forwards cubic-bezier(0.17, 0.89, 0.32, 1.28);
+	animation: scale 2.5s  0.6s forwards cubic-bezier(0.17, 0.89, 0.32, 1.28);
+	-webkit-transform-origin: center center;
+	-moz-transform-origin: 68px center 0;
+	-o-transform-origin: center center;
+	/*transform-origin: 68px center 0;*/
+	transform-origin: center center;
+}
+
+#logo-name {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-animation: appear .85s 2s forwards;
+	-o-animation: appear .85s 2s forwards;
+	animation: appear .85s 2s forwards;
+}
+
+
+
+
+
+
