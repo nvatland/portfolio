@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Nicole Vatland</title>
+<!-- 	http://www.willpeavy.com/minifier/
+ -->	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="description" content="I am Nicole Vatland. I am a web designer and developer in San Diego.">
+	<link rel="icon" type="image/png" href="images/favicon-01.png">
+	<meta name="viewport" content="initial-scale=1.0">
+	<style>
+	html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'Lato Light',sans-serif;
+}
+
+a {
+	text-decoration: none;
+	-webkit-transition:all 0.6s;
+	-moz-transition:all 0.6s;
+	transition:all 0.6s;
+	color: #726DA8;
+	letter-spacing: 0;
+}
+
+a:hover {
+	color: #5BB3B9;
+}
+
+p.menubtn {
+	display: none;
+	color:#5BB3BA;
+}
+
+.modal-open {
+	overflow: hidden;
+}
+
+object {
+	width: 100%;
+	height: 100%;
+	letter-spacing: 4;
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    src: url('../fonts/LatoLight/Lato-Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/LatoLight/Lato-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/LatoLight/Lato-Light.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/LatoLight/Lato-Light.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/LatoLight/Lato-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: 'Lato Medium';
+    src: url('../fonts/LatoMedium/Lato-Medium.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/LatoMedium/Lato-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/LatoMedium/Lato-Medium.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/LatoMedium/Lato-Medium.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/LatoMedium/Lato-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Athelas Regular';
+    src: url('../fonts/Athelas/athelas-regular-webfont.eot');
+    src: url('../fonts/Athelas/athelas-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Athelas/athelas-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Athelas/athelas-regular-webfont.woff') format('woff'),
+         url('../fonts/Athelas/athelas-regular-webfont.ttf') format('truetype'),
+         url('../fonts/Athelas/athelas-regular-webfont.svg#athelasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	height: 70px;
+	width: 100%;
+	background-color: rgba(255,255,255,0.9);
+	box-shadow: 0 2px 6px 0 rgba(0,0,0,0.20);
+	z-index: 100;
+}
+
+#logo-container {
+	position: relative;
+	top:6px;
+	width: 129px;
+	height: 100%;
+}
+
+h2 {
+	text-align: center;
+	color: #5BB3BA;
+	font-family: 'Lato Medium', sans-serif;
+	font-size: 24px;
+	padding-bottom: 10px;
+/*	letter-spacing: 1px;
+*/}
+
+nav ul {
+	text-align: right;
+	margin-top:-42px;
+	width: auto;
+}
+
+nav li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0 10px;
+}
+
+nav li:last-child {
+	padding-right: 50px;
+}
+
+nav li a {
+	color: #5BB3BA;
+}
+
+nav li a:hover {
+	color: #726DA8;
+}
+
+.mobilemenu {
+	display: none;
+}
+
+section {
+	display: block;
+	width: 100%;
+	padding-top:80px;
+	padding-bottom: 80px;
+}
+
+#home {
+	padding-bottom: 0;
+	height: 100%;
+}
+
+/***************************
+HOME
+***************************/
+
+#home {
+	background-image: url(../images/bg.jpg);
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+div#logo {
+	width: 60%;
+	margin: 60px auto 0;
+}
+
+svg {
+	width: 100%;
+	height: 100%;
+	margin-left:6px;
+}
+
+	.st0{opacity:0.3;filter: alpha(opacity=30);fill:#95D6E0;enable-background:new;}
+	.st1{opacity:0.5;filter: alpha(opacity=50);fill:#5AB1B8;enable-background:new;}
+	.st2{opacity:0.3;filter: alpha(opacity=30);fill:#5AB1B8;enable-background:new;}
+	.st3{fill:#FCFDFF;}
+#logo-holder {
+	width: 60%;
+	height: 60%;
+	margin: 0 auto;
+}
+
+#logo-name {
+	font-family: 'Athelas Regular';
+	text-align: center;
+	color: #43969C;
+	font-size: 32px;
+	font-size: 5vw;
+	letter-spacing: 2vw;
+	margin-top: 0;
+	width: 100%;
+}
+
+	@-webkit-keyframes scale {
+	0% {
+		-webkit-transform: scale(0);
+		        transform: scale(0);
+	}
+
+
+	90% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+
+	}
+}
+@keyframes scale {
+	0% {
+		-webkit-transform: scale(0);
+		        transform: scale(0);
+	}
+
+
+	90% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+
+	}
+}
+
+@-webkit-keyframes appear {
+	from {
+		visibility: hidden;
+		opacity: 0;
+		-webkit-transform: translateY(-100px);
+		        transform: translateY(-100px);
+	}
+
+	to {
+		visibility: visible;
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+		        transform: translateY(0px);
+	}
+}
+
+@keyframes appear {
+	from {
+		visibility: hidden;
+		opacity: 0;
+		-webkit-transform: translateY(-100px);
+		        transform: translateY(-100px);
+	}
+
+	to {
+		visibility: visible;
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+		        transform: translateY(0px);
+	}
+}
+
+/***************************
+APPLIED ANIMATIONS
+***************************/
+.st0, .st1, .st2, .st3 {
+	-webkit-animation: scale 2.5s  0.6s forwards cubic-bezier(0.17, 0.89, 0.32, 1.28);
+	-o-animation: scale 2.5s  0.6s forwards cubic-bezier(0.17, 0.89, 0.32, 1.28);
+	animation: scale 2.5s  0.6s forwards cubic-bezier(0.17, 0.89, 0.32, 1.28);
+	-webkit-transform-origin: center center;
+	-moz-transform-origin: 68px center 0;
+	-o-transform-origin: center center;
+	/*transform-origin: 68px center 0;*/
+	transform-origin: center center;
+}
+
+#logo-name {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-animation: appear .85s 2s forwards;
+	-o-animation: appear .85s 2s forwards;
+	animation: appear .85s 2s forwards;
+}
+@media screen and (max-width: 760px) {
+	body {
+		width: 100%;
+		overflow-x: hidden !important;
+	}
+
+	#home {
+		height: 80%;
+		background-image: url(images/bg-small.jpg);
+		background-attachment: inherit;
+	}
+
+	#home #logo {
+		width: 95%;
+	}
+
+	#aboutcontainer {
+		width: auto;
+	}
+
+	.navbtn {
+		display: block;
+		background-color: rgba(255,255,255,0.9);
+		height: 40px;
+		text-align: center;
+		border-bottom:1px solid #726DA8;
+		width: 100%;
+		/*display: none;*/
+	}
+
+.regmenu {
+    	display: none;
+    }
+ul.mobilemenu {
+    	display: block;
+    	width:100%;
+		padding: 0;
+		margin: 0;
+		box-shadow: 0 2px 6px 0 rgba(0,0,0,0.20);
+    }
+    p.menubtn {
+    	display: block;
+    	position: fixed;
+		right: 30px;
+		top:12px;
+		text-align: right;
+		width: 80%;
+    }
+
+    .mobilemenu a {
+    	display: block;
+		text-align: center;
+		padding: 10px 5px;
+		width:100%;
+		background-color: rgba(255,255,255,0.9);
+		color: #5BB3BA;
+		-webkit-transition:all 0.6s;
+		-moz-transition:all 0.6s;
+		transition:all 0.6s;
+		border-bottom: 1px solid #726DA8;
+	}
+
+	.mobilemenu a:hover {
+		color: #726DA8;
+	}
+
+	.mobilemenu a:first-child {
+		border-top: 1px solid #726DA8;
+	}
+}
+	</style>
+	<!-- font awesome icons -->
+<!-- 	<link href="css/fontawesome.min.css" rel="stylesheet">
+ -->	<!-- main style sheet with media queries -->
+<!-- 	<link rel="stylesheet" href="css/style.css">
+ -->	<!-- google -->
+	<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-70353134-1', 'auto');
+		  ga('send', 'pageview');
+	</script>
+</head>
+<body>
+	<nav>
+		<div id="logo-container"><a href="#home"><svg version="1.1" id="Layer_1 mainlogo" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="54 0 84 74" >
+<switch>
+	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
+		</i:pgfRef>
+	</foreignObject>
+	<g i:extraneous="self">
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M74.9,10.8C67.6,23,60.4,35.2,53.1,47.5
+			c-1,1.7-2.1,3.5-3.1,5.2c14,0,28,0,42.1,0c2.4,0,4.9,0,7.3,0C92.2,40.5,85.1,28.3,78,16.1C77,14.3,75.9,12.5,74.9,10.8z"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M70.3,11.2C65.9,24.6,61.4,38,57,51.4
+			c-0.6,1.9-1.3,3.8-1.9,5.7c13.7-2.8,27.4-5.5,41.2-8.3c2.4-0.5,4.8-1,7.1-1.4c-9.6-10.5-19.3-21.1-28.9-31.6
+			C73.1,14.2,71.7,12.7,70.3,11.2z"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M61.1,60.4C73.9,55,86.7,49.6,99.6,44.2
+			c2.2-0.9,4.4-1.9,6.7-2.8C94.5,33,82.7,24.5,71,16.1c-1.7-1.2-3.4-2.4-5.1-3.6c-1.4,14-2.8,27.9-4.2,41.9
+			C61.5,56.4,61.3,58.4,61.1,60.4"/>
+		<path style="opacity:0.5;fill:#5AB1B8;enable-background:new    ;" d="M67.7,62.4c11.3-7.8,22.7-15.6,34-23.4
+			c2-1.4,3.9-2.7,5.9-4.1C94.3,29,81,23.1,67.6,17.2c-1.9-0.9-3.8-1.7-5.8-2.6c1.7,13.9,3.4,27.9,5.1,41.8
+			C67.2,58.5,67.5,60.4,67.7,62.4"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M74.6,63.1c9.4-9.9,18.8-19.7,28.2-29.6
+			c1.6-1.7,3.3-3.4,4.9-5.1c-14.3-3.2-28.7-6.3-43-9.5c-2.1-0.5-4.1-0.9-6.2-1.4c4.7,13.3,9.5,26.6,14.2,39.9
+			C73.3,59.3,73.9,61.2,74.6,63.1"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M81.5,62.4c7-11.5,14-23,21-34.5c1.2-2,2.4-4,3.6-6
+			c-14.7-0.3-29.5-0.5-44.2-0.8c-2.1,0-4.2-0.1-6.4-0.1C63,33.1,70.6,45.2,78.1,57.2C79.3,59,80.4,60.7,81.5,62.4"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M88.1,60.4c4.3-12.6,8.7-25.3,13-37.9
+			c0.8-2.2,1.5-4.4,2.3-6.6c-14.5,2.6-28.9,5.3-43.4,7.9c-2.1,0.4-4.2,0.8-6.2,1.1c10,10.3,20.1,20.7,30.1,31
+			C85.2,57.5,86.7,59,88.1,60.4"/>
+		<path style="opacity:0.5;fill:#5AB1B8;enable-background:new    ;" d="M52.7,29.3C64.8,37.5,76.9,45.6,89,53.7
+			c1.7,1.2,3.4,2.3,5.1,3.5C95.6,44,97,30.7,98.5,17.5c0.3-2.3,0.5-4.6,0.8-6.9C85.7,16.1,72.1,21.5,58.6,27
+			C56.6,27.8,54.7,28.5,52.7,29.3z"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M94.1,6.3c-12.1,8-24.2,16-36.2,24
+			c-1.7,1.1-3.5,2.3-5.2,3.4c13.6,5.6,27.2,11.1,40.8,16.7c1.9,0.8,3.9,1.6,5.8,2.4c-1.5-13.2-2.9-26.4-4.4-39.6
+			C94.6,10.9,94.3,8.6,94.1,6.3"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M88.1,3C78,13.2,68,23.4,57.9,33.6
+			c-1.4,1.5-2.9,2.9-4.3,4.4c14.5,2.8,29.1,5.5,43.6,8.3c2.1,0.4,4.1,0.8,6.2,1.2c-4.3-12.6-8.7-25.3-13-37.9
+			C89.6,7.4,88.8,5.2,88.1,3"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M81.5,1c-7.6,12-15.2,23.9-22.8,35.9
+			c-1.1,1.7-2.2,3.4-3.3,5.2c14.8-0.2,29.6-0.3,44.5-0.5c2.1,0,4.2,0,6.3-0.1c-7-11.5-14-23-21-34.5"/>
+		<path style="opacity:0.5;fill:#5AB1B8;enable-background:new    ;" d="M74.6,0.3C69.8,13.5,65,26.7,60.2,39.9
+			c-0.7,1.9-1.4,3.8-2.1,5.7c14.5-3.1,28.9-6.1,43.4-9.2c2.1-0.4,4.1-0.9,6.2-1.3c-9.4-9.9-18.8-19.7-28.2-29.6"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M67.7,1c-1.8,13.8-3.6,27.7-5.4,41.5c-0.3,2-0.5,4-0.8,6
+			C75,42.7,88.4,36.9,101.9,31c1.9-0.8,3.8-1.7,5.7-2.5c-11.3-7.8-22.7-15.6-34-23.4"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M61.1,3.1c1.3,13.9,2.5,27.8,3.8,41.7c0.2,2,0.4,4,0.5,6
+			c11.9-8.4,23.8-16.7,35.7-25.1c1.7-1.2,3.4-2.4,5.1-3.6C93.4,16.7,80.6,11.3,67.8,5.9"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M55.1,6.4c4.3,13.3,8.6,26.7,12.9,40
+			c0.6,1.9,1.2,3.8,1.9,5.8c9.8-10.5,19.6-21.1,29.4-31.6c1.4-1.5,2.8-3,4.2-4.5C89.7,13.3,76,10.6,62.3,7.8"/>
+		<path style="opacity:0.5;fill:#5AB1B8;enable-background:new    ;" d="M74.4,52.7C81.7,40.4,89,28.2,96.3,16
+			c1-1.7,2.1-3.5,3.1-5.2c-14,0-28,0-42.1,0c-2.4,0-4.9,0-7.3,0C57.1,23,64.2,35.2,71.4,47.4C72.4,49.2,73.4,50.9,74.4,52.7z"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M94.2,6.4C80.5,9.2,66.8,11.9,53,14.7
+			c-2.4,0.5-4.8,1-7.1,1.4c9.6,10.5,19.3,21.1,28.9,31.6c1.4,1.5,2.8,3,4.2,4.6c4.4-13.4,8.9-26.8,13.3-40.2
+			C93,10.2,93.6,8.3,94.2,6.4"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M88.2,3.1C75.4,8.5,62.6,13.9,49.8,19.3
+			c-2.2,0.9-4.4,1.9-6.7,2.8c11.8,8.4,23.5,16.8,35.3,25.2c1.7,1.2,3.4,2.4,5.1,3.6C84.9,37,86.2,23,87.6,9
+			C87.8,7.1,88,5.1,88.2,3.1"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M81.6,1c-11.3,7.8-22.7,15.6-34,23.4
+			c-2,1.4-3.9,2.7-5.9,4.1c13.3,5.9,26.7,11.8,40,17.7c1.9,0.9,3.8,1.7,5.8,2.6C85.8,34.9,84.1,20.9,82.4,7"/>
+		<path style="opacity:0.5;fill:#5AB1B8;enable-background:new    ;" d="M74.7,0.3C65.4,10.2,56,20.1,46.6,30
+			c-1.6,1.7-3.3,3.4-4.9,5.1c14.3,3.2,28.7,6.3,43,9.5c2.1,0.5,4.1,0.9,6.2,1.4c-4.7-13.4-9.4-26.7-14.1-40"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M67.9,1c-7,11.5-14,23-21,34.5c-1.2,2-2.4,4-3.6,6
+			C58,41.8,72.8,42,87.5,42.3c2.1,0,4.2,0.1,6.4,0.1C86.2,30.3,78.6,18.2,71.1,6.2"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M61.3,3c-4.3,12.6-8.7,25.3-13,37.9
+			c-0.8,2.2-1.5,4.4-2.3,6.6c14.5-2.6,28.9-5.3,43.4-7.9c2.1-0.4,4.2-0.8,6.2-1.1c-10-10.3-20.1-20.7-30.1-31"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M55.3,6.3c-1.5,13.2-2.9,26.4-4.4,39.6
+			c-0.3,2.3-0.5,4.6-0.8,6.9c13.6-5.4,27.1-10.9,40.7-16.3c2-0.8,3.9-1.6,5.9-2.3C84.6,26,72.5,17.9,60.4,9.8
+			C58.7,8.6,57,7.4,55.3,6.3"/>
+		<path style="opacity:0.3;fill:#5AB1B8;enable-background:new    ;" d="M96.7,29.8C83.1,24.2,69.5,18.6,55.9,13
+			c-1.9-0.8-3.9-1.6-5.8-2.4C51.6,23.8,53,37,54.5,50.2c0.3,2.3,0.5,4.6,0.8,6.9c12.1-8,24.2-16,36.2-24
+			C93.2,32.1,95,30.9,96.7,29.8z"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M61.3,60.4C71.4,50.2,81.4,40,91.5,29.8
+			c1.4-1.5,2.9-2.9,4.3-4.4c-14.5-2.8-29.1-5.5-43.6-8.3c-2.1-0.4-4.1-0.8-6.2-1.2c4.3,12.6,8.7,25.3,13,37.9
+			C59.8,56.1,60.5,58.2,61.3,60.4"/>
+		<path style="opacity:0.5;fill:#5AB1B8;enable-background:new    ;" d="M67.9,62.4c7.6-11.9,15.2-23.9,22.8-35.8
+			c1.1-1.7,2.2-3.4,3.3-5.2c-14.8,0.2-29.6,0.3-44.5,0.5c-2.1,0-4.2,0-6.3,0.1c7,11.5,14,23,21,34.5C65.4,58.5,66.6,60.5,67.9,62.4"
+			/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M74.7,63.1c4.8-13.2,9.6-26.4,14.4-39.5
+			c0.7-1.9,1.4-3.8,2.1-5.7C76.7,21,62.3,24,47.8,27.1c-2.1,0.4-4.1,0.9-6.2,1.3C51,38.3,60.4,48.1,69.8,58
+			C71.5,59.7,73.1,61.4,74.7,63.1"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M81.6,62.4c1.8-13.8,3.6-27.7,5.4-41.5c0.3-2,0.5-4,0.8-6
+			c-13.5,5.8-26.9,11.7-40.4,17.5c-1.9,0.8-3.8,1.7-5.7,2.5c11.3,7.8,22.7,15.6,34,23.4"/>
+		<path style="opacity:0.5;fill:#5AB1B8;enable-background:new    ;" d="M88.2,60.4c-1.3-13.9-2.5-27.8-3.8-41.7c-0.2-2-0.4-4-0.5-6
+			C72,21.1,60.1,29.4,48.2,37.8c-1.7,1.2-3.4,2.4-5.1,3.6c12.8,5.4,25.6,10.8,38.4,16.2C83.8,58.5,86,59.4,88.2,60.4"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M79.5,11.3c-9.8,10.5-19.6,21.1-29.4,31.6
+			c-1.4,1.5-2.8,3-4.2,4.5c13.7,2.8,27.4,5.5,41.2,8.3c2.4,0.5,4.8,1,7.1,1.4c-4.3-13.3-8.6-26.7-12.9-40
+			C80.7,15.1,80.1,13.2,79.5,11.3z"/>
+		<path style="opacity:0.3;fill:#95D6E0;enable-background:new    ;" d="M74.9,10.8C67.6,23,60.4,35.2,53.1,47.5
+			c-1,1.7-2.1,3.5-3.1,5.2c14,0,28,0,42.1,0c2.4,0,4.9,0,7.3,0C92.2,40.5,85.1,28.3,78,16.1C77,14.3,75.9,12.5,74.9,10.8z"/>
+		<path style="opacity:0.5;fill:#5AB1B8;enable-background:new    ;" d="M70.3,11.2C65.9,24.6,61.4,38,57,51.4
+			c-0.6,1.9-1.3,3.8-1.9,5.7c13.7-2.8,27.4-5.5,41.2-8.3c2.4-0.5,4.8-1,7.1-1.4c-9.6-10.5-19.3-21.1-28.9-31.6
+			C73.1,14.2,71.7,12.7,70.3,11.2z"/>
+		<path style="fill:#FCFDFF;" d="M82.8,36.8c0,0.4,0.3,0.7,0.8,0.9s1.1,0.4,1.7,0.5c0.3,0.1,0.4,0.2,0.4,0.5c0,0.2,0,0.4-0.1,0.6
+			c-0.7-0.1-1.5-0.1-2.2-0.1c-0.7,0-1.5-0.1-2.3-0.1c-0.8,0-1.5,0-2.3,0.1c-0.8,0-1.5,0.1-2.2,0.1c-0.1-0.3-0.1-0.5-0.1-0.6
+			c0-0.3,0.1-0.4,0.4-0.5c0.6-0.1,1.1-0.3,1.6-0.5c0.5-0.2,0.7-0.5,0.7-0.9v-7.9c0-0.7,0-1.3-0.1-1.9c-0.1-0.6-0.2-1.1-0.5-1.5
+			c-0.2-0.4-0.6-0.7-1-1c-0.4-0.2-0.9-0.3-1.6-0.3c-0.7,0-1.4,0.1-2.1,0.3c-0.7,0.2-1.3,0.6-1.8,1s-0.9,1-1.2,1.6
+			c-0.3,0.6-0.5,1.4-0.5,2.2v7.3c0,0.4,0.2,0.7,0.7,0.9c0.5,0.2,1,0.4,1.6,0.5c0.3,0.1,0.4,0.2,0.4,0.5c0,0.2,0,0.4-0.1,0.6
+			c-0.7-0.1-1.5-0.1-2.2-0.1c-0.7,0-1.5-0.1-2.3-0.1c-0.8,0-1.6,0-2.4,0.1c-0.7,0-1.5,0.1-2.2,0.1c-0.1-0.3-0.1-0.5-0.1-0.6
+			c0-0.3,0.1-0.4,0.4-0.5c0.6-0.1,1.2-0.3,1.7-0.5c0.5-0.2,0.8-0.5,0.8-0.9V25.8c0-0.8-0.1-1.4-0.4-1.7s-0.9-0.6-1.9-0.6
+			c-0.4-0.1-0.6-0.2-0.6-0.6c0-0.1,0-0.3,0.1-0.5c0.4,0,0.9,0,1.6-0.1c0.7,0,1.2-0.1,1.6-0.1c0.7-0.1,1.2-0.2,1.8-0.3
+			c0.5-0.1,0.9-0.2,1.1-0.2c0.4,0,0.6,0.2,0.6,0.6c0,0.4,0,0.8-0.1,1.3c-0.1,0.5-0.1,1.2-0.1,2.1c1.2-1.3,2.4-2.3,3.5-3
+			c1.1-0.7,2.3-1,3.7-1c1.7,0,3,0.5,3.9,1.4c0.9,1,1.3,2.3,1.3,4V36.8z"/>
+		<g>
+	</g>
+</switch>
+</svg></a></div>
+		<ul class="regmenu">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+		<p class="menubtn">Menu</p>
+		<ul class="mobilemenu">
+			<a href="#home" class="mob-menu"><li>Home</li></a>
+			<a href="#about" class="mob-menu"><li>About</li></a>
+			<a href="#skills" class="mob-menu"><li>Skills</li></a>
+			<a href="#portfolio" class="mob-menu"><li>Portfolio</li></a>
+			<a href="#contact" class="mob-menu"><li>Contact</li></a>
+			
+		</ul>
+	</nav>
+	<section id="home">
+		<div id="logo">
+			<div id="logo-holder">
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="34.2 -4.5 84 73" style="enable-background:new 34.2 -4.5 84 73;" xml:space="preserve">
+				<g id="p1">
+					<path class="st0" d="M74.9,10.8C67.6,23,60.4,35.2,53.1,47.5c-1,1.7-2.1,3.5-3.1,5.2c14,0,28,0,42.1,0c2.4,0,4.9,0,7.3,0
+						C92.2,40.5,85.1,28.3,78,16.1C77,14.3,75.9,12.5,74.9,10.8z"/>
+				</g>
+				<g id="p2">
+					<path class="st0" d="M70.3,11.2C65.9,24.6,61.4,38,57,51.4c-0.6,1.9-1.3,3.8-1.9,5.7c13.7-2.8,27.4-5.5,41.2-8.3
+						c2.4-0.5,4.8-1,7.1-1.4c-9.6-10.5-19.3-21.1-28.9-31.6C73.1,14.2,71.7,12.7,70.3,11.2z"/>
+				</g>
+				<g id="p3">
+					<path class="st0" d="M61.1,60.4C73.9,55,86.7,49.6,99.6,44.2c2.2-0.9,4.4-1.9,6.7-2.8C94.5,33,82.7,24.5,71,16.1
+						c-1.7-1.2-3.4-2.4-5.1-3.6c-1.4,14-2.8,27.9-4.2,41.9C61.5,56.4,61.3,58.4,61.1,60.4"/>
+				</g>
+				<g id="p4">
+					<path class="st1" d="M67.7,62.4c11.3-7.8,22.7-15.6,34-23.4c2-1.4,3.9-2.7,5.9-4.1C94.3,29,81,23.1,67.6,17.2
+						c-1.9-0.9-3.8-1.7-5.8-2.6c1.7,13.9,3.4,27.9,5.1,41.8C67.2,58.5,67.5,60.4,67.7,62.4"/>
+				</g>
+				<g id="p5">
+					<path class="st0" d="M74.6,63.1c9.4-9.9,18.8-19.7,28.2-29.6c1.6-1.7,3.3-3.4,4.9-5.1c-14.3-3.2-28.7-6.3-43-9.5
+						c-2.1-0.5-4.1-0.9-6.2-1.4c4.7,13.3,9.5,26.6,14.2,39.9C73.3,59.3,73.9,61.2,74.6,63.1"/>
+				</g>
+				<g id="p6">
+					<path class="st0" d="M81.5,62.4c7-11.5,14-23,21-34.5c1.2-2,2.4-4,3.6-6c-14.7-0.3-29.5-0.5-44.2-0.8c-2.1,0-4.2-0.1-6.4-0.1
+						C63,33.1,70.6,45.2,78.1,57.2C79.3,59,80.4,60.7,81.5,62.4"/>
+				</g>
+				<g id="p7">
+					<path class="st0" d="M88.1,60.4c4.3-12.6,8.7-25.3,13-37.9c0.8-2.2,1.5-4.4,2.3-6.6c-14.5,2.6-28.9,5.3-43.4,7.9
+						c-2.1,0.4-4.2,0.8-6.2,1.1c10,10.3,20.1,20.7,30.1,31C85.2,57.5,86.7,59,88.1,60.4"/>
+				</g>
+				<g id="p8">
+					<path class="st1" d="M52.7,29.3C64.8,37.5,76.9,45.6,89,53.7c1.7,1.2,3.4,2.3,5.1,3.5C95.6,44,97,30.7,98.5,17.5
+						c0.3-2.3,0.5-4.6,0.8-6.9C85.7,16.1,72.1,21.5,58.6,27C56.6,27.8,54.7,28.5,52.7,29.3z"/>
+				</g>
+				<g id="p9">
+					<path class="st0" d="M94.1,6.3c-12.1,8-24.2,16-36.2,24c-1.7,1.1-3.5,2.3-5.2,3.4c13.6,5.6,27.2,11.1,40.8,16.7
+						c1.9,0.8,3.9,1.6,5.8,2.4c-1.5-13.2-2.9-26.4-4.4-39.6C94.6,10.9,94.3,8.6,94.1,6.3"/>
+				</g>
+				<g id="p10">
+					<path class="st0" d="M88.1,3C78,13.2,68,23.4,57.9,33.6c-1.4,1.5-2.9,2.9-4.3,4.4c14.5,2.8,29.1,5.5,43.6,8.3
+						c2.1,0.4,4.1,0.8,6.2,1.2c-4.3-12.6-8.7-25.3-13-37.9C89.6,7.4,88.8,5.2,88.1,3"/>
+				</g>
+				<g id="p11">
+					<path class="st0" d="M81.5,1c-7.6,12-15.2,23.9-22.8,35.9c-1.1,1.7-2.2,3.4-3.3,5.2c14.8-0.2,29.6-0.3,44.5-0.5
+						c2.1,0,4.2,0,6.3-0.1c-7-11.5-14-23-21-34.5"/>
+				</g>
+				<g id="p12">
+					<path class="st1" d="M74.6,0.3C69.8,13.5,65,26.7,60.2,39.9c-0.7,1.9-1.4,3.8-2.1,5.7c14.5-3.1,28.9-6.1,43.4-9.2
+						c2.1-0.4,4.1-0.9,6.2-1.3c-9.4-9.9-18.8-19.7-28.2-29.6"/>
+				</g>
+				<g id="p13">
+					<path class="st0" d="M67.7,1c-1.8,13.8-3.6,27.7-5.4,41.5c-0.3,2-0.5,4-0.8,6C75,42.7,88.4,36.9,101.9,31c1.9-0.8,3.8-1.7,5.7-2.5
+						c-11.3-7.8-22.7-15.6-34-23.4"/>
+				</g>
+				<g id="p14">
+					<path class="st0" d="M61.1,3.1c1.3,13.9,2.5,27.8,3.8,41.7c0.2,2,0.4,4,0.5,6c11.9-8.4,23.8-16.7,35.7-25.1
+						c1.7-1.2,3.4-2.4,5.1-3.6C93.4,16.7,80.6,11.3,67.8,5.9"/>
+				</g>
+				<g id="p15">
+					<path class="st0" d="M55.1,6.4c4.3,13.3,8.6,26.7,12.9,40c0.6,1.9,1.2,3.8,1.9,5.8c9.8-10.5,19.6-21.1,29.4-31.6
+						c1.4-1.5,2.8-3,4.2-4.5C89.7,13.3,76,10.6,62.3,7.8"/>
+				</g>
+				<g id="p16">
+					<path class="st1" d="M74.4,52.7C81.7,40.4,89,28.2,96.3,16c1-1.7,2.1-3.5,3.1-5.2c-14,0-28,0-42.1,0c-2.4,0-4.9,0-7.3,0
+						C57.1,23,64.2,35.2,71.4,47.4C72.4,49.2,73.4,50.9,74.4,52.7z"/>
+				</g>
+				<g id="p17">
+					<path class="st0" d="M94.2,6.4C80.5,9.2,66.8,11.9,53,14.7c-2.4,0.5-4.8,1-7.1,1.4c9.6,10.5,19.3,21.1,28.9,31.6
+						c1.4,1.5,2.8,3,4.2,4.6c4.4-13.4,8.9-26.8,13.3-40.2C93,10.2,93.6,8.3,94.2,6.4"/>
+				</g>
+				<g id="p18">
+					<path class="st0" d="M88.2,3.1C75.4,8.5,62.6,13.9,49.8,19.3c-2.2,0.9-4.4,1.9-6.7,2.8c11.8,8.4,23.5,16.8,35.3,25.2
+						c1.7,1.2,3.4,2.4,5.1,3.6C84.9,37,86.2,23,87.6,9C87.8,7.1,88,5.1,88.2,3.1"/>
+				</g>
+				<g id="p19">
+					<path class="st0" d="M81.6,1c-11.3,7.8-22.7,15.6-34,23.4c-2,1.4-3.9,2.7-5.9,4.1c13.3,5.9,26.7,11.8,40,17.7
+						c1.9,0.9,3.8,1.7,5.8,2.6C85.8,34.9,84.1,20.9,82.4,7"/>
+				</g>
+				<g id="p20">
+					<path class="st1" d="M74.7,0.3C65.4,10.2,56,20.1,46.6,30c-1.6,1.7-3.3,3.4-4.9,5.1c14.3,3.2,28.7,6.3,43,9.5
+						c2.1,0.5,4.1,0.9,6.2,1.4c-4.7-13.4-9.4-26.7-14.1-40"/>
+				</g>
+				<g id="p21">
+					<path class="st0" d="M67.9,1c-7,11.5-14,23-21,34.5c-1.2,2-2.4,4-3.6,6C58,41.8,72.8,42,87.5,42.3c2.1,0,4.2,0.1,6.4,0.1
+						C86.2,30.3,78.6,18.2,71.1,6.2"/>
+				</g>
+				<g id="p22">
+					<path class="st0" d="M61.3,3c-4.3,12.6-8.7,25.3-13,37.9c-0.8,2.2-1.5,4.4-2.3,6.6c14.5-2.6,28.9-5.3,43.4-7.9
+						c2.1-0.4,4.2-0.8,6.2-1.1c-10-10.3-20.1-20.7-30.1-31"/>
+				</g>
+				<g id="p23">
+					<path class="st0" d="M55.3,6.3c-1.5,13.2-2.9,26.4-4.4,39.6c-0.3,2.3-0.5,4.6-0.8,6.9c13.6-5.4,27.1-10.9,40.7-16.3
+						c2-0.8,3.9-1.6,5.9-2.3C84.6,26,72.5,17.9,60.4,9.8C58.7,8.6,57,7.4,55.3,6.3"/>
+				</g>
+				<g id="p24">
+					<path class="st2" d="M96.7,29.8C83.1,24.2,69.5,18.6,55.9,13c-1.9-0.8-3.9-1.6-5.8-2.4C51.6,23.8,53,37,54.5,50.2
+						c0.3,2.3,0.5,4.6,0.8,6.9c12.1-8,24.2-16,36.2-24C93.2,32.1,95,30.9,96.7,29.8z"/>
+				</g>
+				<g id="p25">
+					<path class="st0" d="M61.3,60.4C71.4,50.2,81.4,40,91.5,29.8c1.4-1.5,2.9-2.9,4.3-4.4c-14.5-2.8-29.1-5.5-43.6-8.3
+						c-2.1-0.4-4.1-0.8-6.2-1.2c4.3,12.6,8.7,25.3,13,37.9C59.8,56.1,60.5,58.2,61.3,60.4"/>
+				</g>
+				<g id="p26">
+					<path class="st1" d="M67.9,62.4c7.6-11.9,15.2-23.9,22.8-35.8c1.1-1.7,2.2-3.4,3.3-5.2c-14.8,0.2-29.6,0.3-44.5,0.5
+						c-2.1,0-4.2,0-6.3,0.1c7,11.5,14,23,21,34.5C65.4,58.5,66.6,60.5,67.9,62.4"/>
+				</g>
+				<g id="p27">
+					<path class="st0" d="M74.7,63.1c4.8-13.2,9.6-26.4,14.4-39.5c0.7-1.9,1.4-3.8,2.1-5.7C76.7,21,62.3,24,47.8,27.1
+						c-2.1,0.4-4.1,0.9-6.2,1.3C51,38.3,60.4,48.1,69.8,58C71.5,59.7,73.1,61.4,74.7,63.1"/>
+				</g>
+				<g id="p28">
+					<path class="st0" d="M81.6,62.4c1.8-13.8,3.6-27.7,5.4-41.5c0.3-2,0.5-4,0.8-6c-13.5,5.8-26.9,11.7-40.4,17.5
+						c-1.9,0.8-3.8,1.7-5.7,2.5c11.3,7.8,22.7,15.6,34,23.4"/>
+				</g>
+				<g id="p29">
+					<path class="st1" d="M88.2,60.4c-1.3-13.9-2.5-27.8-3.8-41.7c-0.2-2-0.4-4-0.5-6C72,21.1,60.1,29.4,48.2,37.8
+						c-1.7,1.2-3.4,2.4-5.1,3.6c12.8,5.4,25.6,10.8,38.4,16.2C83.8,58.5,86,59.4,88.2,60.4"/>
+				</g>
+				<g id="p30">
+					<path class="st0" d="M79.5,11.3c-9.8,10.5-19.6,21.1-29.4,31.6c-1.4,1.5-2.8,3-4.2,4.5c13.7,2.8,27.4,5.5,41.2,8.3
+						c2.4,0.5,4.8,1,7.1,1.4c-4.3-13.3-8.6-26.7-12.9-40C80.7,15.1,80.1,13.2,79.5,11.3z"/>
+				</g>
+				<g id="p31">
+					<path class="st0" d="M74.9,10.8C67.6,23,60.4,35.2,53.1,47.5c-1,1.7-2.1,3.5-3.1,5.2c14,0,28,0,42.1,0c2.4,0,4.9,0,7.3,0
+						C92.2,40.5,85.1,28.3,78,16.1C77,14.3,75.9,12.5,74.9,10.8z"/>
+				</g>
+				<g id="p32">
+					<path class="st1" d="M70.3,11.2C65.9,24.6,61.4,38,57,51.4c-0.6,1.9-1.3,3.8-1.9,5.7c13.7-2.8,27.4-5.5,41.2-8.3
+						c2.4-0.5,4.8-1,7.1-1.4c-9.6-10.5-19.3-21.1-28.9-31.6C73.1,14.2,71.7,12.7,70.3,11.2z"/>
+				</g>
+				<g id="n">
+					<path class="st3" d="M82.8,36.8c0,0.4,0.3,0.7,0.8,0.9s1.1,0.4,1.7,0.5c0.3,0.1,0.4,0.2,0.4,0.5c0,0.2,0,0.4-0.1,0.6
+						c-0.7-0.1-1.5-0.1-2.2-0.1c-0.7,0-1.5-0.1-2.3-0.1c-0.8,0-1.5,0-2.3,0.1c-0.8,0-1.5,0.1-2.2,0.1c-0.1-0.3-0.1-0.5-0.1-0.6
+						c0-0.3,0.1-0.4,0.4-0.5c0.6-0.1,1.1-0.3,1.6-0.5c0.5-0.2,0.7-0.5,0.7-0.9v-7.9c0-0.7,0-1.3-0.1-1.9c-0.1-0.6-0.2-1.1-0.5-1.5
+						c-0.2-0.4-0.6-0.7-1-1c-0.4-0.2-0.9-0.3-1.6-0.3c-0.7,0-1.4,0.1-2.1,0.3c-0.7,0.2-1.3,0.6-1.8,1s-0.9,1-1.2,1.6
+						c-0.3,0.6-0.5,1.4-0.5,2.2v7.3c0,0.4,0.2,0.7,0.7,0.9c0.5,0.2,1,0.4,1.6,0.5c0.3,0.1,0.4,0.2,0.4,0.5c0,0.2,0,0.4-0.1,0.6
+						c-0.7-0.1-1.5-0.1-2.2-0.1c-0.7,0-1.5-0.1-2.3-0.1c-0.8,0-1.6,0-2.4,0.1c-0.7,0-1.5,0.1-2.2,0.1c-0.1-0.3-0.1-0.5-0.1-0.6
+						c0-0.3,0.1-0.4,0.4-0.5c0.6-0.1,1.2-0.3,1.7-0.5c0.5-0.2,0.8-0.5,0.8-0.9V25.8c0-0.8-0.1-1.4-0.4-1.7s-0.9-0.6-1.9-0.6
+						c-0.4-0.1-0.6-0.2-0.6-0.6c0-0.1,0-0.3,0.1-0.5c0.4,0,0.9,0,1.6-0.1c0.7,0,1.2-0.1,1.6-0.1c0.7-0.1,1.2-0.2,1.8-0.3
+						c0.5-0.1,0.9-0.2,1.1-0.2c0.4,0,0.6,0.2,0.6,0.6c0,0.4,0,0.8-0.1,1.3c-0.1,0.5-0.1,1.2-0.1,2.1c1.2-1.3,2.4-2.3,3.5-3
+						c1.1-0.7,2.3-1,3.7-1c1.7,0,3,0.5,3.9,1.4c0.9,1,1.3,2.3,1.3,4V36.8z"/>
+				</g>
+				</svg>
+			</div>
+			<h1 id="logo-name">nicole vatland</h1>
+		</div>
+	</section>
+	<section id="about">
+		<h2>About Me</h2>
+		<div id="aboutcontainer">
+            <div id="aboutimage"></div>
+            <div id="textblock">
+                <p>I am a highly motivated front-end web developer with an eye for design. I create responsive websites that will function on all of your devices. While I specialize in web design, I am also interested in motion graphics and graphic design. I am well-versed in HTML, CSS, JavaScript, jQuery, Angular JS, PHP, and MySQL. I am constantly looking for ways to expand my knowledge.</p>
+            </div>
+        </div>
+	</section>
+	<section id="skills">
+		<h2>Skills</h2>
+		<div id="skill-contain">
+			<div class="coding">
+				<i id="code" class="fa fa-code"></i>
+				<div class="border-left">
+					<ul>
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>Sass</li>
+						<li>JavaScript</li>
+						<li>Angular JS</li>
+					</ul>
+				</div><!--
+				--><div class="border-right">
+					<ul>
+						<li>Node JS</li>
+						<li>jQuery</li>
+						<li>PHP</li>
+						<li>MySQL</li>
+						<li>Swift</li>
+					</ul>
+				</div>
+			</div><!--
+			--><div class="design">
+				<i id="tech" class="fa fa-laptop"></i>
+				<div class="border-left">
+					<ul>
+						<li>Photoshop</li>
+						<li>Illustrator</li>
+						<li>Indesign</li>
+						<li>After Effects</li>
+						<li>Premiere</li>
+					</ul>
+				</div><!--
+				--><div class="border-right">
+					<ul>
+						<li>Wordpress</li>
+						<li>Squarespace</li>
+						<li>Sketch 3</li>
+						<li>OmniGraffle Pro</li>
+						<li>Sublime Text 2</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="portfolio">
+		<h2>Portfolio</h2>
+		<div>
+			<figure class="port-boxes" data-content="content-1">
+				<img src="images/portfolio/gradients-icon.jpg" alt="Gradient Website">
+				<figcaption>
+					<p>Click for more details</p>
+					<a href="#">View more</a>
+				</figcaption>
+				<div class="zoomer__area"></div>
+			</figure><!--
+			--><figure class="port-boxes" data-content="content-2">
+				<img src="images/portfolio/wuollets-icon.jpg" alt="Wuollet Website">
+				<figcaption>
+					<p>Click for more details</p>
+					<a href="#">View more</a>
+				</figcaption>
+				<div class="zoomer__area"></div>
+			</figure><!--
+			--><figure class="port-boxes" data-content="content-3">
+				<img src="images/portfolio/minnezoo-icon.jpg" alt="Minnezoo App">
+				<figcaption>
+					<p>Click for more details</p>
+					<a href="#">View more</a>
+				</figcaption>
+				<div class="zoomer__area"></div>
+			</figure><!--
+			--><figure class="port-boxes" data-content="content-4">
+				<img src="images/portfolio/mediture-icon.jpg" alt="TruChart Mobile">
+				<figcaption>
+					<p>Click for more details</p>
+					<a href="#">View more</a>
+				</figcaption>
+				<div class="zoomer__area"></div>
+			</figure><!--
+		--><!-- <figure class="port-boxes" data-content="content-5">
+				<img src="images/portfolio/cd-icon.jpg" alt="Chris Doherty Fitness">
+				<figcaption>
+					<p>Click for more details</p>
+					<a href="#">View more</a>
+				</figcaption>
+				<div class="zoomer__area"></div>
+			</figure> --><!--
+			--><!-- <figure class="port-boxes" data-content="content-6">
+				<img src="images/portfolio/ang-icon.jpg" alt="Angular Portfolio">
+				<figcaption>
+					<p>Click for more details</p>
+					<a href="#">View more</a>
+				</figcaption>
+				<div class="zoomer__area"></div>
+			</figure> --><!--
+			<figure class="port-boxes" data-content="content-7">
+				<img src="images/portfolio/cd-icon.jpg" alt="Chris Doherty Fitness">
+				<figcaption>
+					<p>Click for more details</p>
+					<a href="#">View more</a>
+				</figcaption>
+				<div class="zoomer__area"></div>
+			</figure><!--
+			<figure class="port-boxes" data-content="content-8">
+				<img src="images/portfolio/cd-icon.jpg" alt="Chris Doherty Fitness">
+				<figcaption>
+					<p>Click for more details</p>
+					<a href="#">View more</a>
+				</figcaption>
+				<div class="zoomer__area"></div>
+			</figure>-->
+		</div>
+		<div class="content">
+			<div class="content__item" id="content-1">
+				<button class="close">
+					<i class="fa fa-close"></i>
+					<span class="text-hidden">Close content</span>
+				</button>
+				<div class="slider">
+					<img class="content__item-img slide" src="images/portfolio/gradients.jpg" alt="CSS Gradients Website">
+					<img class="content__item-img slide" src="images/portfolio/gradients2.jpg" alt="CSS Gradients Website">
+					<img class="content__item-img slide" src="images/portfolio/gradients4.jpg" alt="CSS Gradients Website">
+					<img class="content__item-img slide" src="images/portfolio/gradients3.jpg" alt="CSS Gradients Website">	
+				</div>
+				<div class="arrow-contain">
+					<div class="arrow arrow-left"><i class="fa fa-angle-left"></i></div>
+					<div class="arrow arrow-right"><i class="fa fa-angle-right"></i></div>
+				</div>
+				<div class="content__item-inner">
+					<h4>CSS Web App</h4>
+					<p>This app was created using Angular JS, Node.JS, jQuery, CSS3, HTML5, and MongoDB. The user is able to generate the CSS for two color gradients. The colors can be changed by clicking the small boxes, which opens up a color picker. The boxes can also move to adjust the position of the gradient. The direction can be modified by clicking on the coordinating arrows. If the user is logged in, they have the option to save the gradient to their profile, which they can then access later.</p>
+				</div>
+			</div>
+			<div class="content__item" id="content-2">
+					<button class="close">
+						<i class="fa fa-close"></i>
+						<span class="text-hidden">Close content</span>
+					</button>
+					<div class="slider">						<img class="content__item-img slide" src="images/portfolio/wuollets.jpg" alt="Wuollet's Bakery">
+						<img class="content__item-img slide" src="images/portfolio/wuollets2.jpg" alt="Wuollet's Bakery">
+						<img class="content__item-img slide" src="images/portfolio/wuollets3.jpg" alt="Wuollet's Bakery">
+						<img class="content__item-img slide" src="images/portfolio/wuollets4.jpg" alt="Wuollet's Bakery">
+					</div>
+					<div class="arrow-contain">
+						<div class="arrow arrow-left"><i class="fa fa-angle-left"></i></div>
+						<div class="arrow arrow-right"><i class="fa fa-angle-right"></i></div>
+					</div>
+				<div class="content__item-inner">
+					<h4>Wuollet's Bakery</h4>
+					<p>Wuollet's Bakery is a family owned bakery in Minnesota. This website was created using PHP, MySQL, CSS3, jQuery, and HTML5. The website displays the locations, bakery items, about the bakery, and a photogallery. The administrator has access to the admin panel, where they are able to add items, edit items, delete items, upload photos to the photo gallery, and delete photos from the photo gallery.</p>
+				</div>
+			</div>
+			<div class="content__item" id="content-3">
+					<button class="close">
+						<i class="fa fa-close"></i>
+						<span class="text-hidden">Close content</span>
+					</button>
+					<div class="slider">
+						<img class="content__item-img slide" src="images/portfolio/minnezoo.jpg" alt="Minnezoo App">
+						<img class="content__item-img slide" src="images/portfolio/minnezoo2.jpg" alt="Minnezoo App">
+						<img class="content__item-img slide" src="images/portfolio/minnezoo3.jpg" alt="Minnezoo App">
+						<img class="content__item-img slide" src="images/portfolio/minnezoo4.jpg" alt="Minnezoo App">
+						<img class="content__item-img slide" src="images/portfolio/minnezoo5.jpg" alt="Minnezoo App">
+					</div>
+					<div class="arrow-contain">
+						<div class="arrow arrow-left"><i class="fa fa-angle-left"></i></div>
+						<div class="arrow arrow-right"><i class="fa fa-angle-right"></i></div>
+					</div>
+				<div class="content__item-inner">
+					<h4>Minnezoo</h4>
+					<p>This is a mobile app concept design that was completed using OmniGraffle Pro and Photoshop. The idea of this app is to entertain children while they are at the zoo. This project focused on the User Experience design. I interviewed different people at the San Diego Zoo to see how they keep their children entertained on the long days. I then created wireframes and paper prototypes before designing the app. The app allows for the kids to play games, write and draw notes, take pictures, complete quizzes, and look up information about the animals.</p>
+				</div>
+			</div>
+			<div class="content__item" id="content-4">
+					<button class="close">
+						<i class="fa fa-close"></i>
+						<span class="text-hidden">Close content</span>
+					</button>
+					<div class="slider">
+						<img class="content__item-img slide" src="images/portfolio/mediture.jpg" alt="TruChart Mobile App">
+						<img class="content__item-img slide" src="images/portfolio/mediture2.jpg" alt="TruChart Mobile App">
+					</div>
+					<div class="arrow-contain">
+						<div class="arrow arrow-left"><i class="fa fa-angle-left"></i></div>
+						<div class="arrow arrow-right"><i class="fa fa-angle-right"></i></div>
+					</div>
+				<div class="content__item-inner">
+					<h4>TruChart Mobile</h4>
+					<p>This mobile app concept was created using Sketch 3. It is a redesign of an app that I designed while working at Mediture. The app is used by nurses who provide homecare to seniors. It allows them to see their schedule, as well as the tasks that they need to perform. Click <a href="https://invis.io/CW5TGHWF4" target="_blank">here</a> to see the InVision prototype.</p>
+				</div>
+			</div>
+<!-- 			<div class="content__item" id="content-5">
+					<button class="close">
+						<i class="fa fa-close"></i>
+						<span class="text-hidden">Close content</span>
+					</button>
+					<div class="slider">
+						<img class="content__item-img slide" src="images/portfolio/cd.jpg" alt="Chris Doherty Fitness">
+						<img class="content__item-img slide" src="images/portfolio/cd1.jpg" alt="Chris Doherty Fitness">
+						<img class="content__item-img slide" src="images/portfolio/cd2.jpg" alt="Chris Doherty Fitness">
+					</div>
+					<div class="arrow-contain">
+						<div class="arrow arrow-left"><i class="fa fa-angle-left"></i></div>
+						<div class="arrow arrow-right"><i class="fa fa-angle-right"></i></div>
+					</div>
+				<div class="content__item-inner">
+					<h4>Chris Doherty Fitness</h4>
+					<p>This mobile app concept was created using Sketch 3. It is a redesign of an app that I designed while working at Mediture. The app is used by nurses who provide homecare to seniors. It allows them to see their schedule, as well as the tasks that they need to perform.</p>
+				</div>
+			</div><!--
+			<div class="content__item" id="content-6">
+					<button class="close">
+						<i class="fa fa-close"></i>
+						<span class="text-hidden">Close content</span>
+					</button>
+					<div class="slider">
+						<img class="content__item-img slide" src="images/portfolio/ang.jpg" alt="Angular Portfolio">
+						<img class="content__item-img slide" src="images/portfolio/ang1.jpg" alt="Angular Portfolio">
+<!-- 						<img class="content__item-img slide" src="images/portfolio/ang2.jpg" alt="Angular Portfolio">
+					</div>
+					<div class="arrow-contain">
+						<div class="arrow arrow-left"><i class="fa fa-angle-left"></i></div>
+						<div class="arrow arrow-right"><i class="fa fa-angle-right"></i></div>
+					</div>
+				<div class="content__item-inner">
+					<h4>Angular Portfolio</h4>
+					<p>This mobile app concept was created using Sketch 3. It is a redesign of an app that I designed while working at Mediture. The app is used by nurses who provide homecare to seniors. It allows them to see their schedule, as well as the tasks that they need to perform.</p>
+				</div>
+			</div> --><!--
+			<div class="content__item" id="content-7">
+					<button class="close">
+						<i class="fa fa-close"></i>
+						<span class="text-hidden">Close content</span>
+					</button>
+					<div class="slider">
+						<img class="content__item-img slide" src="images/portfolio/cd.jpg" alt="Chris Doherty Fitness">
+						<img class="content__item-img slide" src="images/portfolio/cd1.jpg" alt="Chris Doherty Fitness">
+						<img class="content__item-img slide" src="images/portfolio/cd2.jpg" alt="Chris Doherty Fitness">
+					</div>
+					<div class="arrow-contain">
+						<div class="arrow arrow-left"><i class="fa fa-angle-left"></i></div>
+						<div class="arrow arrow-right"><i class="fa fa-angle-right"></i></div>
+					</div>
+				<div class="content__item-inner">
+					<h4>Chris Doherty Fitness</h4>
+					<p>This mobile app concept was created using Sketch 3. It is a redesign of an app that I designed while working at Mediture. The app is used by nurses who provide homecare to seniors. It allows them to see their schedule, as well as the tasks that they need to perform.</p>
+				</div>
+			</div>
+			<div class="content__item" id="content-8">
+					<button class="close">
+						<i class="fa fa-close"></i>
+						<span class="text-hidden">Close content</span>
+					</button>
+					<div class="slider">
+						<img class="content__item-img slide" src="images/portfolio/cd.jpg" alt="Chris Doherty Fitness">
+						<img class="content__item-img slide" src="images/portfolio/cd1.jpg" alt="Chris Doherty Fitness">
+						<img class="content__item-img slide" src="images/portfolio/cd2.jpg" alt="Chris Doherty Fitness">
+					</div>
+					<div class="arrow-contain">
+						<div class="arrow arrow-left"><i class="fa fa-angle-left"></i></div>
+						<div class="arrow arrow-right"><i class="fa fa-angle-right"></i></div>
+					</div>
+				<div class="content__item-inner">
+					<h4>Chris Doherty Fitness</h4>
+					<p>This mobile app concept was created using Sketch 3. It is a redesign of an app that I designed while working at Mediture. The app is used by nurses who provide homecare to seniors. It allows them to see their schedule, as well as the tasks that they need to perform.</p>
+				</div>
+			</div>-->
+		</div>
+	</section>
+	<section id="contact">
+		<h2>Contact</h2>
+		<div id="form-messages"></div>
+		<form id="contactform" method="post" action="mailer.php">
+			<fieldset class="css">
+				<input type="text" id="name" name="name" class="forminput">
+				<label for="name" class="formlabel">Name</label>
+			</fieldset>
+			<fieldset class="css">
+				<input type="email" id="email" name="email" class="forminput">
+				<label for="email" class="formlabel">Email</label>
+			</fieldset>
+			<fieldset class="css">
+				<input type="text" name="subject" id="subject" class="forminput">
+				<label for="subject" class="formlabel">Subject</label>
+			</fieldset>
+			<fieldset class="css">
+				<textarea name="message" id="message" class="forminput"></textarea>
+				<label for="message" class="formlabel">Message</label>
+			</fieldset>
+			<input type="submit" value="Send">
+		</form>
+		<!-- <h2 class="connect">Connect with Me</h2> -->
+		<div class="social-icons">
+			<a href="https://github.com/nvatland" target="_blank"><div class="social-contain"><i class="fa fa-github"></i><h3>GitHub</h3></div></a>
+			<a href="assets/nicole_vatland_resume.pdf" target="_blank"><div class="social-contain"><i class="fa fa-file"></i><h3>Resume</h3></div></a>
+			<a href="https://www.linkedin.com/pub/nicole-vatland/54/1a2/70a" target="_blank"><div class="social-contain"><i class="fa fa-linkedin"></i><h3>LinkedIn</h3></div></a>
+		</div>
+	</section>
+
+	<footer>
+		<p>&copy; Nicole Vatland 2016</p>
+	</footer>
+    <script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'css/fontawesome.min.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+	 <script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'css/style.min.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+	<script src="js/jquery.min.js"></script>
+	<script>
+	$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+	</script>
+
+	<script src="js/main.js"></script>
+	
+</body>
+</html>
