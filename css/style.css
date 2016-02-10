@@ -968,6 +968,13 @@ footer p {
     }
 }
 
+@media screen and (min-width: 1600px) {
+    #logo-name {
+        font-size: 81px;
+        letter-spacing: 30px;
+    }
+}
+
 @media screen and (min-width:1800px) {
     .content__item.active {
         max-width: 1173px
